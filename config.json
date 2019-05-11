@@ -1,0 +1,16 @@
+{
+    "serverConfig" : {
+        "hostName": "bart.developi.info",
+        "connection": {
+            "port": "8089"
+        }
+    }, 
+
+    "databaseConfig" : {
+        "filePath": "demos/engage19/demo-ct.nsf"
+    },
+
+    "servicePort": 3000,
+    "defaultPageCount": 10
+
+}
