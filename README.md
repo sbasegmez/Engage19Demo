@@ -1,5 +1,3 @@
-# Engage19Demo
-Demo Repository presented at Engage 2019
 Engage 2019 - RESTful Services Demo
 ===================================
 
