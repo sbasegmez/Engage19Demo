@@ -12,9 +12,7 @@ function executeOnDb(callback, errCallback) {
     domino.useServer(config.serverConfig).then(async server => {
         const database = await server.useDatabase(config.databaseConfig);
         callback(database);
-    }).catch(error => {
-       errCallback(error);
-    });
+    }).catch(errCallback);
 }
 
 // We define a route from a function which takes database, request and response.
@@ -23,9 +21,7 @@ function defineRoute(func) {
     return ((req, res) => {
         executeOnDb(async database => {
             await func(database, req, res);
-        }, function (error) {
-            res.error(error);
-        });
+        }, res.error);
     });
 }
 

@@ -10,7 +10,7 @@
   "author": "Serdar Basegmez",
   "license": "MIT",
   "dependencies": {
-    "@domino/domino-db": "file:../../../Downloads/DOMINO_APPDEV_PACK_1.0.1_MP_EN/domino-domino-db-1.2.0.tgz",
+    "@domino/domino-db": "file:../domino-appdev-pack-1.0.6/js/domino-domino-db-1.7.0.tgz",
     "express": "^4.16.4"
   },
   "devDependencies": {

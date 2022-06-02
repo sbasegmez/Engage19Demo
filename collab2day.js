@@ -15,7 +15,7 @@ module.exports.getLatestNews = async function (database, request, response) {
             // DQL Query for approved news
             query: `    form = 'News' 
                             and nstate = 'approved' 
-                            and npublicationdate > @dt('2019-04-15')`,
+                            and npublicationdate > @dt('2020-01-01')`,
             
             // Query Args is not used for now, as the date parameters will be available on FP2.
             // queryArgs: [ { name: 'cutOff', value: { type: 'datetime', data: getCutOffDateString(30) } } ],
